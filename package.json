@@ -1,0 +1,13 @@
+{
+  "name": "electron-chat-server",
+  "version": "0.0.1",
+  "description": "Server for the Sogeti Digital Bootcamp - Electron Chat App Session",
+  "author": "Bas Klinkhamer @ Sogeti",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
