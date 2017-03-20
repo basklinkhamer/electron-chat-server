@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "express": "^4.15.2",
+    "mongoose": "^4.9.0",
+    "morgan": "^1.8.1",
     "socket.io": "^1.7.3"
   }
 }
