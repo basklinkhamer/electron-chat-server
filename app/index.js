@@ -32,9 +32,9 @@ let Chat = mongoose.model('Chat', ChatSchema);
 // Allow CORS in our app
 app.all('*', allowCORS);
 
-// Frontend Route to display our chatboxes on a viewer
+// Frontend Route forwards any users that attempt direct contact
 app.get('/', function(req,res){
-    res.sendFile(path.resolve('public/index.html'));
+    res.redirect('https://hikaru.1vt.nl');
 });
 
 // Setup Route to initially setup a new MongoDB
@@ -98,7 +98,7 @@ function setupDB(req, res) {
             content: 'Time for pizza & beer',
             username: 'Bas Klinkhamer',
             email: 'bas.klinkhamer@sogeti.com',
-            room: 'pizza-and-beer'
+            room: 'beer-and-pizza'
         }
     ];
 
